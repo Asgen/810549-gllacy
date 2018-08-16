@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Каталог Глейси</title>
@@ -7,42 +7,57 @@
 <body>
 	<header class="main-header">
   		<nav class="main-navigation">
-  			<a class="main-logo" href="/">
-	  		<img src="http://placehold.it/150x100" width="154" height="64" alt="Лошотип Магазин Глейси">
+  			<a class="main-logo" href="index.html">
+	  			<img src="http://placehold.it/150x100" width="154" height="64" alt="Лошотип Магазин Глейси">
 	  		</a>
 	  		<ul class="site-navigation">
-	  			<li><a href="catalog.html">Каталог</a>
-	  				<table class="visually-hidden">
-	  						<th>Новинки</th>
-	  						<tr><td>Сливочное</td></tr>
-	  						<tr><td>Щербеты</td></tr>
-	  						<tr><td>Фруктовый лед</td></tr>
-	  						<tr><td>Мелорин</td></tr>	  						
-	  				</table>
+	  			<li>Каталог
+	  				<ul class="visually-hidden">
+	  					<li>Новинки</li>
+	  					<li><a></a>Сливочное</li>
+	  					<li><a>Щербеты<</a></li>
+	  					<li><a>Фруктовый лед</a></li>
+	  					<li><a>Мелорин</a></li>	  						
+	  				</ul>
 	  			</li>
 	  			<li><a href="payment.html">Доставка и оплата</a></li>
 	  			<li><a href="about.html">О компании</a></li>
 	  		</ul>
-	  		<ul class="search-navigation">
-	  			<li><span class="visually-hidden">Поиск</span></li>
-	  		</ul>
-	  		<ul class="user-navigation">
-	  			<li><a href="login-link">Вход</a></li>
-	  		</ul>
-	  		<ul class="cart-navigation">
-	  			<li><span class="visually-hidden">Корзина</span></li>
-	  		</ul>
-	  		<ul class="breadcrumbs">
-	  			<li><a href="/">Главная</a></li>
-	  			<li><a href="catalog.html">Каталог</a></li>
-	  			<li><a href="creamy.html">Сливочное</a></li>
-	  		</ul>
+	  		<div class="search-navigation">Поиск
+	  			<div class="visually-hidden">Форма поиска</div>
+	  		</div>
+	  		<div class="user-navigation">Вход
+	  			<div class="visually-hidden">Форма входа</div>
+	  		</div>
+	  		<div class="cart-navigation">Корзина
+	  			<div class="visually-hidden">
+	  				<table>
+	  					<tr>
+	  						<td></td>
+	  						<td></td>
+	  						<td></td>
+	  						<td></td>
+	  						<td></td>
+	  						<td></td>
+	  					</tr>
+	  					<tr><td></td></tr>
+	  				</table>
+	  			</div>
+	  		</div>
 	  		<p>С 10 до 20, ежедневно</p>
 	  		<b>8 812 450-25-25</b>
   		</nav>
   	</header>
 
   	<main class="conteiner">
+  		<header class="inner-header">
+  			<ul class="breadcrumbs">
+  				<li><a href="index.html">Главная</a></li>
+  				<li><a>Каталог</a></li>
+  				<li><a>Сливочное</a></li>
+  			</ul>	
+  		</header>
+
   		<h1>Сливочное мороженое</h1>
 
   		<section class="filters">
@@ -50,94 +65,59 @@
   		</section>
 
   		<section class="showcase">
-  			<table class="showcase-table">
-  				<tr>
-  					<th><h3 class="hits-table-heading">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></th>
-  					<th><h3 class="hits-table-heading">Сливочно-кофейное с кусочками шоколада</h3></th>
-  					<th><h3 class="hits-table-heading">Сливочно-клубничное с присыпкой из белого шоколада</h3></th>
-  					<th><h3 class="hits-table-heading">Сливочное крем-брюле с карамельной подливкой</h3></th>
-  				</tr>
-  				<tr>
-  					<td><p class="hits-price">310 <span>р/кг</span></p></td>
-  					<td><p class="hits-price">380 <span>р/кг</span></p></td>
-  					<td><p class="hits-price">355 <span>р/кг</span></p></td>
-  					<td><p class="hits-price">415 <span>р/кг</span></p></td>
-  				</tr>
-  				<tr>
-  					<td><img src="http://placehold.it/150x100" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
-  					<td><img src="http://placehold.it/150x100" alt="Сливочно-кофейное с кусочками шоколада"></td>
-  					<td><img src="http://placehold.it/150x100" alt="Сливочно-клубничное с присыпкой из белого шоколада"></td>
-  					<td><img src="http://placehold.it/150x100" alt="Сливочное крем-брюле с карамельной подливкой"></td>
-  				</tr>
-  				<tr>
-  					<th><h3 class="hits-table-heading">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></th>
-  					<th><h3 class="hits-table-heading">Сливочно-кофейное с кусочками шоколада</h3></th>
-  					<th><h3 class="hits-table-heading">Сливочно-клубничное с присыпкой из белого шоколада</h3></th>
-  					<th><h3 class="hits-table-heading">Сливочное крем-брюле с карамельной подливкой</h3></th>
-  				</tr>
-  				<tr>
-  					<td><p class="hits-price">310 <span>р/кг</span></p></td>
-  					<td><p class="hits-price">380 <span>р/кг</span></p></td>
-  					<td><p class="hits-price">355 <span>р/кг</span></p></td>
-  					<td><p class="hits-price">415 <span>р/кг</span></p></td>
-  				</tr>
-  				<tr>
-  					<td><img src="http://placehold.it/150x100" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
-  					<td><img src="http://placehold.it/150x100" alt="Сливочно-кофейное с кусочками шоколада"></td>
-  					<td><img src="http://placehold.it/150x100" alt="Сливочно-клубничное с присыпкой из белого шоколада"></td>
-  					<td><img src="http://placehold.it/150x100" alt="Сливочное крем-брюле с карамельной подливкой"></td>
-  				</tr>
-  				<tr>
-  					<th><h3 class="hits-table-heading">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></th>
-  					<th><h3 class="hits-table-heading">Сливочно-кофейное с кусочками шоколада</h3></th>
-  					<th><h3 class="hits-table-heading">Сливочно-клубничное с присыпкой из белого шоколада</h3></th>
-  					<th><h3 class="hits-table-heading">Сливочное крем-брюле с карамельной подливкой</h3></th>
-  				</tr>
-  				<tr>
-  					<td><p class="hits-price">310 <span>р/кг</span></p></td>
-  					<td><p class="hits-price">380 <span>р/кг</span></p></td>
-  					<td><p class="hits-price">355 <span>р/кг</span></p></td>
-  					<td><p class="hits-price">415 <span>р/кг</span></p></td>
-  				</tr>
-  				<tr>
-  					<td><img src="http://placehold.it/150x100" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
-  					<td><img src="http://placehold.it/150x100" alt="Сливочно-кофейное с кусочками шоколада"></td>
-  					<td><img src="http://placehold.it/150x100" alt="Сливочно-клубничное с присыпкой из белого шоколада"></td>
-  					<td><img src="http://placehold.it/150x100" alt="Сливочное крем-брюле с карамельной подливкой"></td>
-  				</tr>
-  				<tr>
-  					<th><h3 class="hits-table-heading">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3></th>
-  					<th><h3 class="hits-table-heading">Сливочно-кофейное с кусочками шоколада</h3></th>
-  					<th><h3 class="hits-table-heading">Сливочно-клубничное с присыпкой из белого шоколада</h3></th>
-  					<th><h3 class="hits-table-heading">Сливочное крем-брюле с карамельной подливкой</h3></th>
-  				</tr>
-  				<tr>
-  					<td><p class="hits-price">310 <span>р/кг</span></p></td>
-  					<td><p class="hits-price">380 <span>р/кг</span></p></td>
-  					<td><p class="hits-price">355 <span>р/кг</span></p></td>
-  					<td><p class="hits-price">415 <span>р/кг</span></p></td>
-  				</tr>
-  				<tr>
-  					<td><img src="http://placehold.it/150x100" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
-  					<td><img src="http://placehold.it/150x100" alt="Сливочно-кофейное с кусочками шоколада"></td>
-  					<td><img src="http://placehold.it/150x100" alt="Сливочно-клубничное с присыпкой из белого шоколада"></td>
-  					<td><img src="http://placehold.it/150x100" alt="Сливочное крем-брюле с карамельной подливкой"></td>
-  				</tr>
-  			</table>
-  			<ol>
-  				<li><span class="showcase-navigation"></span></li>
-  				<li><span class="showcase-navigation"></span></li>
-  				<li><span class="showcase-navigation"></span></li>
-  			</ol>
+  			<ul>
+  				<li>
+  					<article class="showcase-item-wrapper">
+	  				<img class="showcase-image" src="http://placehold.it/150x100" width="267" height="267" alt="сливочно-клубничное с присыпкой из белого шоколада">
+	  				<p>310₽<span class="kilo">/кг</span></p>
+	  				<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+	  				<a class="visually-hidden button showcase-item-button">Быстрый промотр</a>
+  					</article>
+  				</li>
+  				<li>
+  					<article class="showcase-item-wrapper">
+	  				<img class="showcase-image" src="http://placehold.it/150x100" width="267" height="267" alt="сливочно-клубничное с присыпкой из белого шоколада">
+	  				<p>380₽<span>/кг</span></p>
+  					<p>Сливочно-кофейное с кусочками шоколада</p>
+	  				<a class="visually-hidden button showcase-item-button">Быстрый промотр</a>
+  					</article>
+  				</li>
+  				<li>
+  					<article class="showcase-item-wrapper">
+	  				<img class="showcase-image" src="http://placehold.it/150x100" width="267" height="267" alt="сливочно-клубничное с присыпкой из белого шоколада">
+	  				<p>355₽<span>/кг</span></p>
+  					<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+	  				<a class="visually-hidden button showcase-item-button">Быстрый промотр</a>
+  					</article>
+  				</li>
+  				<li>
+  					<article class="showcase-item-wrapper">
+	  				<img class="showcase-image" src="http://placehold.it/150x100" width="267" height="267" alt="сливочно-клубничное с присыпкой из белого шоколада">
+	  				<p>415₽<span>/кг</span></p>
+  					<p>Сливочное крем-брюле с карамельной подливкой</p>
+	  				<a class="visually-hidden button showcase-item-button">Быстрый промотр</a>
+  					</article>
+  				</li>
+  			</ul>
+  			<ul>
+  				<li><span class="showcase-navigation"><a href=""><</a></span></li>
+  				<li><span class="showcase-navigation"><a href="">1</a></span></li>
+  				<li><span class="showcase-navigation"><a href="">2</a></span></li>
+  				<li><span class="showcase-navigation"><a href="">3</a></span></li>
+  				<li><span class="showcase-navigation"><a href="">4</a></span></li>
+  				<li><span class="showcase-navigation"><a href="">5</a></span></li>
+  				<li><span class="showcase-navigation"><a href="">6</a></span></li>
+  				<li><span class="showcase-navigation"><a href="">></a></span></li>
+  			</ul>
   		</section>
   	</main>
 
   	  	<footer class="main-footer">
   		<ul class="social-list">
-  				<li><a class="social-button" href="#">Твиттер</a></li>
-  				<li><a class="social-button" href="#">Инстаграм</a></li>
-  				<li><a class="social-button" href="#">Фэйсбук</a></li>
-  				<li><a class="social-button" href="#">Вконтакте</a></li>
+  			<li><a class="social-button" href="#">Твиттер</a></li>
+  			<li><a class="social-button" href="#">Инстаграм</a></li>
+  			<li><a class="social-button" href="#">Фэйсбук</a></li>
+  			<li><a class="social-button" href="#">Вконтакте</a></li>
   		</ul>
   		<ul class="footer-links">
   			<li><a href="#">Для поставщиков</a></li>
