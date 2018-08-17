@@ -11,10 +11,10 @@
 	  			<img src="http://placehold.it/150x100" width="154" height="64" alt="Лошотип Магазин Глейси">
 	  		</a>
 	  		<ul class="site-navigation">
-	  			<li><a href="catalog.html"></a>Каталог
+	  			<li><a href="catalog.html">Каталог</a>
 	  				<ul class="visually-hidden">
 	  					<li><a href="innovations.html">Новинки</a></li>
-	  					<li><a href="">Сливочное</a></li>
+	  					<li><a>Сливочное</a></li>
 	  					<li><a href="sherbet.html">Щербеты</a></li>
 	  					<li><a href="fruit-ice.html">Фруктовый лед</a></li>
 	  					<li><a href="melorin.html">Мелорин</a></li>	  						
@@ -32,16 +32,27 @@
 	  		<div class="cart-navigation">Корзина
 	  			<div class="visually-hidden">
 	  				<table>
-	  					<tr>
-	  						<td></td>
-	  						<td></td>
-	  						<td></td>
-	  						<td></td>
-	  						<td></td>
-	  						<td></td>
-	  					</tr>
-	  					<tr><td></td></tr>
-	  				</table>
+              <tr>
+                <td><a href="" aria-label="Кнопка удалить из корзины"></a></td>
+                <td class="table-image"><img src="http://placehold.it/150x100" width="50" height="50" alt="Пломбир с апельсиновым джемом"></td>
+                <td class="table-name"><p>Пломбир с апельсиновым джемом</p></td>
+                <td class="table-quantity">1,5 кг х</td>
+                <td class="table-cost">200 руб.</td>
+                <td class="table-value">300 руб.</td>
+              </tr>
+              <tr>
+                <td><a href="" aria-label="Кнопка удалить из корзины"></a></td>
+                <td class="table-image"><img src="http://placehold.it/150x100" width="50" height="50" alt="Пломбир с апельсиновым джемом"></td>
+                <td class="table-name"><p>Клубничный пломбир с присыпкой из белого шоколада</p></td>
+                <td class="table-quantity">1,5 кг х</td>
+                <td class="table-cost">300 руб.</td>
+                <td class="table-value">450 руб.</td>
+              </tr>
+              <tr>
+                <td class="table-total" colspan="5">Итого</td>
+                <td class="table-total-value">750 руб.</td>
+              </tr>
+            </table>
 	  			</div>
 	  		</div>
 	  		<p>С 10 до 20, ежедневно</p>
@@ -61,13 +72,15 @@
   		<h1>Сливочное мороженое</h1>
 
   		<section class="filters">
-  			<span>Настройки фильтрации</span>
+        <h2 class="visually-hidden">Настройки сортировки мороженого</h2>
+  			<span>Настройки сортировки</span>
   		</section>
 
   		<section class="showcase">
   			<ul>
   				<li>
   					<article class="showcase-item-wrapper">
+              <h2 class="visually-hidden">Сливочное мороженое с апельсиновым джемом</h2>
   	  				<img class="showcase-image" src="http://placehold.it/150x100" width="267" height="267" alt="сливочно-клубничное с присыпкой из белого шоколада">
   	  				<p>310₽<span class="kilo">/кг</span></p>
   	  				<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
@@ -76,6 +89,7 @@
   				</li>
   				<li>
   					<article class="showcase-item-wrapper">
+              <h2 class="visually-hidden">Сливочно-кофейное мороженое</h2>
   	  				<img class="showcase-image" src="http://placehold.it/150x100" width="267" height="267" alt="сливочно-клубничное с присыпкой из белого шоколада">
   	  				<p>380₽<span>/кг</span></p>
     					<p>Сливочно-кофейное с кусочками шоколада</p>
@@ -84,6 +98,7 @@
   				</li>
   				<li>
   					<article class="showcase-item-wrapper">
+              <h2 class="visually-hidden">Сливочно-клубничное мороженое</h2>
   	  				<img class="showcase-image" src="http://placehold.it/150x100" width="267" height="267" alt="сливочно-клубничное с присыпкой из белого шоколада">
   	  				<p>355₽<span>/кг</span></p>
     					<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
@@ -92,6 +107,7 @@
   				</li>
   				<li>
   					<article class="showcase-item-wrapper">
+              <h2 class="visually-hidden">Сливочное крем-брюле мороженое</h2>
   	  				<img class="showcase-image" src="http://placehold.it/150x100" width="267" height="267" alt="сливочно-клубничное с присыпкой из белого шоколада">
   	  				<p>415₽<span>/кг</span></p>
     					<p>Сливочное крем-брюле с карамельной подливкой</p>
@@ -100,14 +116,14 @@
   				</li>
   			</ul>
   			<ul class="showcase-navigation">
-  				<li><span class="showcase-navigation-back"><a href=""><</a></span></li>
-  				<li><span class="showcase-navigation-1"><a href="">1</a></span></li>
-  				<li><span class="showcase-navigation-2"><a href="">2</a></span></li>
-  				<li><span class="showcase-navigation-3"><a href="">3</a></span></li>
-  				<li><span class="showcase-navigation-4"><a href="">4</a></span></li>
-  				<li><span class="showcase-navigation-5"><a href="">5</a></span></li>
-  				<li><span class="showcase-navigation-6"><a href="">6</a></span></li>
-  				<li><span class="showcase-navigation-forward"><a href="">></a></span></li>
+  				<li><span class="showcase-navigation-link disabled-navigation-link"><a href="">&#60;</a></span></li>
+  				<li><span class="showcase-navigation-link active-navigation-link"><a>1</a></span></li>
+  				<li><span class="showcase-navigation-link"><a href="">2</a></span></li>
+  				<li><span class="showcase-navigation-link"><a href="">3</a></span></li>
+  				<li><span class="showcase-navigation-link"><a href="">4</a></span></li>
+  				<li><span class="showcase-navigation-link"><a href="">5</a></span></li>
+  				<li><span class="showcase-navigation-link"><a href="">6</a></span></li>
+  				<li><span class="showcase-navigation-link"><a href="">&#62;</a></span></li>
   			</ul>
   		</section>
   	</main>
