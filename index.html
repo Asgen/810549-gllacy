@@ -10,7 +10,7 @@
   	<header class="main-header">
   		<nav class="main-navigation">
   			<a class="main-logo">
-	  			<img src="img/logo.png" width="154" height="64" alt="Лошотип Магазин Глейси">
+	  			<img src="img/svg/logo.svg" width="154" height="64" alt="Лошотип Магазин Глейси">
 	  		</a>
 	  		<ul class="site-navigation">
 	  			<li><a href="catalog.html">Каталог</a>
@@ -27,11 +27,26 @@
 	  		</ul>
 	  		<div class="search-navigation">
 	  			<div class="search-navigation-block">Поиск</div>
-	  			<div class="visually-hidden">Форма поиска</div>
+	  			<div class="visually-hidden">Форма поиска
+	  				<form action="https://echo.htmlacademy.ru" method="POST" class="form-search" name="form-search">
+	  					<label class="visually-hidden" for="search">Что ищем?</label>
+	  					<input type="search" id="search" name="search" placeholder="Что ищем?">
+	  				</form>
+	  			</div>
 	  		</div>
 	  		<div class="user-navigation">
 	  			<div class="user-navigation-block">Вход</div>
-	  			<div class="visually-hidden">Форма входа</div>
+	  			<div class="visually-hidden">Форма входа
+	  				<form action="https://echo.htmlacademy.ru" method="POST" class="form-enter" name="form-enter">
+	  					<label class="visually-hidden" for="enter-email">Ведите email</label>
+	  					<input type="email" id="enter-email" name="email" placeholder="Электронная почта" required>
+	  					<label class="visually-hidden" for="enter-password">Введите пароль</label>
+	  					<input type="password" id="enter-password" name="password" placeholder="пароль" required>
+	  					<input type="submit" class="button" value="Войти">
+	  					<a href="">Забыли пароль?</a>
+	  					<a href="">Новая регистрация</a>
+	  				</form>
+	  			</div>
 	  		</div>
 	  		<div class="cart-navigation">
 	  			<div class="cart-navigation-block">Корзина</div>
@@ -135,9 +150,13 @@
   		</article>
 
   		<div class="subscription">
-  			<h2 class="visually-hidden">Рассылка</h2>
-  			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-  			<!-- здесь форма -->
+  			<form action="https://echo.htmlacademy.ru" method="POST" name="subscription">
+	  			<h2 class="visually-hidden">Рассылка</h2>
+	  			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+	  			<label class="visually-hidden" for="subscription">Введите email</label>
+	  			<input type="email" for="subscription" placeholder="Электронная почта" required>
+	  			<input class="button" type="submit" value="Отправить">
+	  		</form>
   		</div>
 
   		<section class="map">
@@ -173,5 +192,18 @@
   			</p>
   		</div>
   	</footer>
+
+  	<section class="popup-wrapper">
+  		<form action="https://echo.htmlacademy.ru" method="POST" name="form-invoice">
+  			<h3>Мы обязательно вам ответим!</h3>
+  			<label class="visually-hidden" for="invoice-name">Введите ваше имя</label>
+  			<input type="text" id="invoice-name" name="name" placeholder="Как вас зовут?" required>
+  			<label class="visually-hidden" for="invoice-email">Введите email</label>
+  			<input type="email" id="invoice-email" name="email" placeholder="Ваша почта для ответа?" required>
+  			<label class="visually-hidden" for="invoice-question">Задайте ваш вопрос</label>
+  			<textarea name="question" id="invoice-question" rows="10" cols="30" placeholder="Напишите что-нибудь..." required></textarea>
+  			<input class="button" type="submit" value="Отправить">
+  		</form>  		
+  	</section>
   </body>
 </html>
