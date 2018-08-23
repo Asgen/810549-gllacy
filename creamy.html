@@ -10,7 +10,7 @@
   			<a class="main-logo" href="index.html">
 	  			<img src="img/svg/logo.svg" width="154" height="64" alt="Лошотип Магазин Глейси">
 	  		</a>
-	  		<ul class="site-navigation">
+	  		<ul class="site-navigation default-list">
 	  			<li><a href="catalog.html">Каталог</a>
 	  				<ul class="visually-hidden">
 	  					<li><a href="innovations.html">Новинки</a></li>
@@ -62,7 +62,7 @@
 
   	<main class="conteiner">
   		<header class="inner-header">
-  			<ul class="breadcrumbs">
+  			<ul class="breadcrumbs default-list">
   				<li><a href="index.html">Главная</a></li>
   				<li><a href="catalog.html">Каталог</a></li>
   				<li><a>Сливочное</a></li>
@@ -74,17 +74,20 @@
   		<section class="filters">
         <h2 class="visually-hidden">Настройки фильтрации</h2>
   			<form action="https://echo.htmlacademy.ru" method="get" class="filter" name="filters" id="form-filters">
-          <fieldset>    
-            <legend>Сортировка:</legend>  
+          <fieldset class="filter">    
+            <legend class="filter-name">Сортировка:</legend>  
             <div class="filter-option">    
               <select class="filter-input filter-input-select" name="sorting" id="sorting-id">
                 <option>по популярности</option>
+                <option>сначала недорогие</option>
+                <option>сначала дорогие</option>
+                <option>по жирности</option>
               </select>
             </div>
           </fieldset>
-          <fieldset>
-            <legend>Цена:</legend>
-            <ul>
+          <fieldset class="filter">
+            <legend class="filter-name">Цена:</legend>
+            <ul class="filter-list default-list">
               <li class="filter-option">
                 <button type="button" class="filter-input filter-input-button" aria-label="нижняя граница цены"></button>
               </li>
@@ -93,30 +96,30 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Жирность:</legend>
-            <ul>
+          <fieldset class="filter">
+            <legend class="filter-name">Жирность:</legend>
+            <ul class="filter-list default-list">
               <li class="filter-option">
                 <input class="filter-input filter-input-radio" type="radio" name="richness" value="0%" id="richness-0">
                 <label for="richness-0">0%</label>
               </li>
               <li class="filter-option">
-                <input class="filter-input filter-input-radio" type="radio" name="richness" value="до 10%" id="richness-10" checked>
+                <input class="filter-input filter-input-radio" type="radio" name="richness" value="10%-or-less" id="richness-10" checked>
                 <label for="richness-10">до 10%</label>
               </li>
               <li class="filter-option">
-                <input class="filter-input filter-input-radio" type="radio" name="richness" value="до 30%" id="richness-30">
+                <input class="filter-input filter-input-radio" type="radio" name="richness" value="30%-or-less" id="richness-30">
                 <label for="richness-30">до 30%</label>
               </li>  
               <li class="filter-option">
-                <input class="filter-input filter-input-radio" type="radio" name="richness" value="свыше 30%" id="richness-30+">
+                <input class="filter-input filter-input-radio" type="radio" name="richness" value="30%-or-more" id="richness-30+">
                 <label for="richness-30+">выше 30%</label>
                </li> 
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Наполнители:</legend>
-            <ul>
+          <fieldset class="filter">
+            <legend class="filter-name">Наполнители:</legend>
+            <ul class="filter-list default-list">
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" value="chocolate-checkbox" id="chocolate-checkbox-id">
                 <label for="chocolate-checkbox-id">шоколадные</label>
@@ -145,7 +148,7 @@
 
   		<section class="showcase">
         <h2>Ассортимент сливочного мороженого</h2>
-  			<ul>
+  			<ul class="showcase-list default-list">
   				<li>
   					<article class="showcase-item-wrapper">
               <h3 class="visually-hidden">Сливочное мороженое с апельсиновым джемом</h3>
@@ -183,7 +186,7 @@
   					</article>
   				</li>
   			</ul>
-  			<ul class="showcase-navigation">
+  			<ul class="showcase-navigation default-list">
   				<li><span class="showcase-navigation-link disabled-navigation-link"><a href="">&#60;</a></span></li>
   				<li><span class="showcase-navigation-link active-navigation-link"><a>1</a></span></li>
   				<li><span class="showcase-navigation-link"><a href="">2</a></span></li>
@@ -197,13 +200,13 @@
   	</main>
 
   	<footer class="main-footer">
-  		<ul class="social-list">
+  		<ul class="social-list default-list">
   			<li><a class="social-button" href="#">Твиттер</a></li>
   			<li><a class="social-button" href="#">Инстаграм</a></li>
   			<li><a class="social-button" href="#">Фэйсбук</a></li>
   			<li><a class="social-button" href="#">Вконтакте</a></li>
   		</ul>
-  		<ul class="footer-links">
+  		<ul class="footer-links default-list">
   			<li class="footer-links-provider"><a href="#">Для поставщиков</a></li>
   			<li><a href="#">О производстве</a></li>
   			<li><a href="#">Наши документы</a></li>
