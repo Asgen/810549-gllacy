@@ -2,9 +2,12 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+  <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="background: #849d8f">
+<body>
 	<h1 class="visually-hidden">Магазин Глэйси</h1>
 
   	<header class="main-header">
@@ -13,20 +16,22 @@
 	  			<img src="img/svg/logo.svg" width="154" height="64" alt="Лошотип Магазин Глейси">
 	  		</a>
 	  		<ul class="site-navigation default-list">
-	  			<li><a href="catalog.html">Каталог</a>
-	  				<ul class="visually-hidden">
-	  					<li><a href="innovations.html">Новинки</a></li>
-	  					<li><a href="creamy.html">Сливочное</a></li>
-	  					<li><a href="sherbet.html">Щербеты</a></li>
-	  					<li><a href="fruit-ice.html">Фруктовый лед</a></li>
-	  					<li><a href="melorin.html">Мелорин</a></li>	  						
+	  			<li class="site-navigation-catalog"><a href="catalog.html" class="selected">Каталог</a>
+	  				<ul class="site-navigation-catalog-items default-list visually-hidden">
+	  					<li class="site-navigation-catalog-item"><a href="innovations.html">Новинки</a></li>
+	  					<li class="site-navigation-catalog-item"><a href="creamy.html">Сливочное</a></li>
+	  					<li class="site-navigation-catalog-item"><a href="sherbet.html">Щербеты</a></li>
+	  					<li class="site-navigation-catalog-item"><a href="fruit-ice.html">Фруктовый лед</a></li>
+	  					<li class="site-navigation-catalog-item"><a href="melorin.html">Мелорин</a></li>	  						
 	  				</ul>
 	  			</li>
 	  			<li><a href="payment.html">Доставка и оплата</a></li>
 	  			<li><a href="about.html">О компании</a></li>
 	  		</ul>
 	  		<div class="search-navigation">
-	  			<div class="search-navigation-block">Поиск</div>
+	  			<div class="search-navigation-block">
+            <button aria-label="Поиск" type="button" class="search-button button"></button>
+          </div>
 	  			<div class="visually-hidden">Форма поиска
 	  				<form action="https://echo.htmlacademy.ru" method="POST" class="form-search" name="form-search">
 	  					<label class="visually-hidden" for="search">Что ищем?</label>
@@ -71,7 +76,7 @@
 	  			<h2 class="slider-text">Пломбир с помадкой и клубничный щербет</h2>
 	  		</div>
 	  		<a class="button slider-button" href="#">Давайте оба!</a>
-	  		<ul>
+	  		<ul class="default-list">
 	  				<li><span class="slider-link slider-active-link "><a href="">1</a></span></li>
 	  				<li><span class="slider-link"><a href="">2</a></span></li>
 	  				<li><span class="slider-link"><a href="">3</a></span></li>
@@ -80,16 +85,18 @@
 
   		<section class="offers">
   			<h2 class="visually-hidden">Акции</h2>
-  			<div class="offer raspberry">
-  				<h3>Малинка даром</h3>
-  				<p>При покупке 2 кг фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-  				<a class="button offer-button" href="">Хочу варенье!</a>
-  			</div>
-  			<div class="offer chocolate">
-  				<h3>Шоколадки даром</h3>
-  				<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-  				<a class="button offer-button" href="">Хочу шоколадки!</a>
-  			</div>
+        <div class="index-column">
+    			<div class="offer raspberry">
+    				<h3>Малинка даром</h3>
+    				<p>При покупке 2 кг фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+    				<a class="button offer-button" href="">Хочу варенье!</a>
+    			</div>
+    			<div class="offer chocolate">
+    				<h3>Шоколадки даром</h3>
+    				<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+    				<a class="button offer-button" href="">Хочу шоколадки!</a>
+    			</div>
+        </div>
   		</section>
 
   		<section class="hits">
@@ -135,40 +142,47 @@
   		</section>
 
   		<section class="about">
-  			<h2 class="about-heading">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-  			<ul class="about-list default-list">
-  				<li class="about-item-1">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-  				<li class="about-item-2">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-  				<li class="about-item-3">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-  				<li class="about-item-4">оставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
-  			</ul>
+        <div class="index-column">
+    			<h2 class="about-heading">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+          <div class="index-column-about">
+      			<ul class="about-list default-list">
+      				<li class="about-item-1">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+      				<li class="about-item-2">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+      				<li class="about-item-3">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+      				<li class="about-item-4">оставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+      			</ul>
+          </div>
+      </div>
   		</section>
 
-  		<article class="preview">
-  			<h2 class="preview-heading">Новое в нашем блоге</h2>
-  			<a class="preview-link" href="blog.html">10 способов сервировки фруктовых щербетов к столу</a>
-  		</article>
-
-  		<div class="subscription">
-  			<form action="https://echo.htmlacademy.ru" method="POST" name="subscription">
-	  			<h2 class="visually-hidden">Рассылка</h2>
-	  			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-	  			<label class="visually-hidden" for="subscription">Введите email</label>
-	  			<input type="email" name="subscription" placeholder="Электронная почта" required>
-	  			<input class="button" type="submit" value="Отправить">
-	  		</form>
-  		</div>
+    	<div class="index-column">	
+        <article class="preview">
+    			<h2 class="preview-heading">Новое в нашем блоге</h2>
+    			<a class="preview-link" href="blog.html">10 способов сервировки фруктовых щербетов к столу</a>
+    		</article>
+    		<div class="subscription">
+    			<form action="https://echo.htmlacademy.ru" method="POST" name="subscription">
+  	  			<h2 class="visually-hidden">Рассылка</h2>
+  	  			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+  	  			<label class="visually-hidden" for="subscription">Введите email</label>
+  	  			<input type="email" name="subscription" placeholder="Электронная почта" required>
+  	  			<input class="button" type="submit" value="Отправить">
+  	  		</form>
+    		</div>
+      </div>
 
   		<section class="map">
   			<h2 class="visually-hidden">Как нас найти</h2>
-  			<div class="map-adress">
-  				<p>Адрес главного офиса и офлайн-магазина:</p>
-  				<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-  				<p>Для заказов по телефону:</p>
-  				<b>8 812 450-25-25</b>
-  				<p>(с 10 до 20 ежедневно)</p>
-  				<a class="button map-button" href="#">Форма обратной связи</a>
-  			</div>
+        <div class="index-map">
+    			<div class="map-adress">
+    				<h3>Адрес главного офиса и офлайн-магазина:</h3>
+    				<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+    				<h3>Для заказов по телефону:</h3>
+    				<b>8 812 450-25-25</b>
+    				<p>(с 10 до 20 ежедневно)</p>
+    				<a class="button map-button" href="#">Форма обратной связи</a>
+    			</div>
+        </div>
   		</section>
   	</main>
 
