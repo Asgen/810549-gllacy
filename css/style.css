@@ -7,13 +7,32 @@ body {
 	font-weight: bold;
 	line-height: 22px;
 	color: white;
-	background-color: #849d8f;
 }
 
 a {
 	color: white;
 	text-decoration-color:  rgba(153, 153, 153, 1); 
 }
+
+.slider-container {
+	position: absolute;
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	background-color: #849d8f;
+}
+
+.content-container {
+	position: relative;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 5px solid pink;
+}
+
+
 
 .main-header input {
 	min-width: 300px;
@@ -229,18 +248,6 @@ a {
 .user-navigation-login-links a {
 	color: black;
 }
-/*.search-navigation-block {
-	background-color: #f8f7f4;
-	position: absolute;
-	top: 30px;
-	right: 1px;
-	border-top: 20px solid #f8f7f4;
-	border-bottom: 20px solid #f8f7f4;
-	border-left: 15px solid #f8f7f4;
-	border-right: 15px solid #f8f7f4;
-	border-radius: 5px;	
-}*/
-
 
 
 .button {
