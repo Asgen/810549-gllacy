@@ -985,6 +985,36 @@ a {
 }
 
 /*--------Inner Page----------------------*/
+.showcase article {
+	position: relative;
+}
+
+.quick-view {
+	display: none;
+	position: absolute;
+	width: 105%;
+    height: 130%;
+
+    align-items: flex-end;
+    justify-content: center;
+    top: -3%;
+    left: -4%;
+    padding: 1% 2% 10% 2%;
+
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    z-index: 10;
+}
+
+.showcase-item-wrapper:hover > .quick-view {
+	display: flex;
+}
+
+.quick-view a {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
 .filters {
 	width: 860px;
 	margin-bottom: 40px;
