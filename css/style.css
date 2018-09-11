@@ -52,6 +52,7 @@ a {
 
 .content-container {
 	max-width: 1200px;
+	min-width: 900px;
 
 	position: relative;
 	margin: 0 auto;
@@ -786,32 +787,40 @@ a {
 	background-image: url("../img/choco-background.jpg");
 }
 
-.hits {
+.showcase {
 	margin-bottom: 40px;
 }
 
-.hits .hits-list {
+.showcase .showcase-list {
 	display: flex;
 	flex-wrap: wrap;
+
+	margin-left: -2%;
+
 	justify-content: space-between;
 	align-items: stretch;
 }
 
-.hits-list li {
+.showcase-list li {
 	margin: 0;
 	padding: 0;
+	margin-bottom: 40px;
+	padding-left: 2%;
 	box-sizing: border-box;
-	max-width: 23%;
-	border: 3px solid red;
+	max-width: 25%;
 }
 
-.hits .showcase-item-wrapper {
+.showcase-list li:last-child {
+	margin-right: auto;
+}
+
+.showcase .showcase-item-wrapper {
 	position: relative;
 }
 
 .showcase-item-wrapper img {
 	border-radius: 150px;
-	max-width: 100%;
+	width: 100%;
 	margin-bottom: 14px;
 }
 
@@ -1040,6 +1049,7 @@ a {
 	background-color: inherit;
     color: white;
     line-height: 22px;
+    border: 0;
 }
 
 .filter-input-select option {
@@ -1067,12 +1077,104 @@ a {
 	line-height: 18px;
 }
 
+/*---------Фильтр цены-----------------*/
+.filter-price-title {
+	display: flex;
+}
+
+.price .price-controls {
+	display: flex;
+  	height: 16px;
+}
+
+.price-controls label {	
+	display: flex;
+
+  	align-items: baseline;
+
+  	font-size: 14px;
+  	line-height: 16px;
+
+  	white-space: nowrap;
+  	cursor: pointer;
+}
+
+.price-controls input {
+  	width: 30px;
+  	margin: 0;
+
+  	color: inherit;
+  	font: inherit;
+
+  	background: none;
+  	border: none;
+}
+
+.price .range-controls {
+	display: flex;
+	width: 180px;
+
+	margin: 0 10px;
+	flex-direction: column;
+	justify-content: center;
+  	position: relative;
+
+    height: 20px;
+    padding: 8px 20px;
+    padding-bottom: 9px;
+    line-height: 18px;
+    font-weight: 500;
+    border-radius: 20px;
+    background-color: #aabcb2;
+}
+
+.range-controls .scale {
+  	height: 4px;
+
+  	background: rgba(255, 255, 255, 0.3);
+}
+
+
+.range-controls .bar {
+  	width: 60%;
+  	height: 4px;
+
+  	margin-left: 40px;
+
+  	background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: 8px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 20%;
+}
+
+.range-toggle-max {
+  left: 70%;
+}
 
 /*---------Чекбокс фильтра-------------*/
 	
 .filter-items label {
 	position: relative;
 	padding-left: 30px;
+	white-space: nowrap;
 }
 
 .filter-item input[type="checkbox"] + .checkbox-indicator {
@@ -1135,6 +1237,7 @@ a {
 	background-image: url("../img/svg/radio-on.svg");
 }
 
+/*------Контент внутренней страницы------*/
 
 
 /*------footer-----------------*/
