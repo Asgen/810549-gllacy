@@ -796,6 +796,7 @@ a {
 	flex-wrap: wrap;
 
 	margin-left: -2%;
+	margin-bottom: 5%;
 
 	justify-content: space-between;
 	align-items: stretch;
@@ -1062,7 +1063,7 @@ a {
 
 
 .filter-price-button {
-	width: 2px
+	width: 2px;
 	height: 2px;
 
 
@@ -1198,8 +1199,7 @@ a {
 	opacity: 1;
 }
 
- .filter-item input[type="checkbox"] + .disabled,
-  {
+ .filter-item input[type="checkbox"] + .disabled {
 	opacity: 0.4;
 }
 
@@ -1237,7 +1237,15 @@ a {
 	background-image: url("../img/svg/radio-on.svg");
 }
 
-/*------Контент внутренней страницы------*/
+/*------Пагинатор------*/
+.paginator {
+	width: 100%;
+	height: 30px;
+
+	white-space: nowrap;
+
+  	background-color: gray;
+}
 
 
 /*------footer-----------------*/
