@@ -1158,10 +1158,6 @@ a {
   cursor: pointer;
 }
 
-.range-toggle:hover {
-  background: #1c4f80;
-}
-
 .range-toggle-min {
   left: 20%;
 }
@@ -1197,10 +1193,6 @@ a {
  .filter-item input[type="checkbox"]:hover + .checkbox-indicator,
  .filter-item input[type="checkbox"]:focus + .checkbox-indicator {
 	opacity: 1;
-}
-
- .filter-item input[type="checkbox"] + .disabled {
-	opacity: 0.4;
 }
 
 .filter-item input[type="checkbox"]:checked + .checkbox-indicator {
@@ -1239,12 +1231,50 @@ a {
 
 /*------Пагинатор------*/
 .paginator {
+	display: flex;
 	width: 100%;
 	height: 30px;
-
+	
+	justify-content: flex-end;
+	align-items: center;
 	white-space: nowrap;
+}
 
-  	background-color: gray;
+.paginator a {
+	padding: 4px 11px;
+    padding-left: 10px;
+
+	font-weight: 400;
+	text-decoration: none;
+
+	border-radius: 20px;
+}
+
+.paginator a:hover {
+	background-color: #9db1a5;
+}
+
+.paginator a:active {
+	color: #323232;
+	background-color: white;
+}
+
+
+.paginator .current-page {
+	color: #323232;
+	background-color: white;
+}
+
+.paginator .next {
+	margin-left: 10px;
+}
+
+.paginator .prev {
+	margin-right: 10px;
+}
+
+.prev svg {
+  transform: rotate(180deg);
 }
 
 
@@ -1332,4 +1362,8 @@ a {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+.disabled {
+	opacity: 0.4;
 }
