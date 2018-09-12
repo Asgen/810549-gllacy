@@ -551,6 +551,10 @@ a {
 	border: 0;
 }
 
+.user-navigation-cart:hover .user-navigation-cart-table {
+	display: flex;
+}
+
 .user-navigation-cart-table tr {
 	display: flex;
 	align-items: center;
