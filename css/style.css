@@ -176,10 +176,6 @@ a {
     background-image: url("../img/slider-3.png");
 }
 
-.slider-text, .slider-image, .slider-button, .slider-navigation {
-	position: absolute;
-}
-
 .slider-text {
 	min-width: 700px;
 	z-index: 1;
