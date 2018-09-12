@@ -20,6 +20,37 @@ a {
 	text-underline-position: under;
 }
 
+.button {
+	font-size: 18px;
+	line-height: 24px;
+
+	padding: 10px 18px;
+	border-radius: 30px;
+
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+
+	background-image: -webkit-linear-gradient(left, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+	background-image: -o-linear-gradient(left, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+	background-image: linear-gradient(to right, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+	border: none;
+}
+
+.button:hover {
+	background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.button:active {
+	background: -webkit-linear-gradient(#d84732 0%, #e1613e 100%);
+	background: -o-linear-gradient(#d84732 0%, #e1613e 100%);
+	background: linear-gradient(#d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
 /*------Общий фон------*/
 .main-page .site-wrapper {
 	min-width: 900px;
@@ -61,7 +92,7 @@ a {
 	box-sizing: border-box;
 }
 
-/* Слайдер */
+/*------Слайдер------*/
 .slider {
 	position: relative;
 	margin-bottom: 40px;
@@ -112,18 +143,6 @@ a {
 	border: none;
 
 	cursor: pointer;
-}
-
-.button:hover {
-	background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
-}
-
-.button:active {
-	background: -webkit-linear-gradient(#d84732 0%, #e1613e 100%);
-	background: -o-linear-gradient(#d84732 0%, #e1613e 100%);
-	background: linear-gradient(#d84732 0%, #e1613e 100%);
-	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .slider-controls {
@@ -187,13 +206,7 @@ a {
 	font-size: 60px;
 	font-weight: bold;
 	line-height: 61px;
-	
 }
-
-.slider-image {
-	width: 1045px;
-}
-
 
 .slider-wrapper {
 	display: flex;
@@ -215,9 +228,13 @@ a {
 }
 
 
-
-.main-header input {
-	min-width: 300px;
+/*------Стили полей ввода------*/
+.main-header input[type=text],
+.main-header input[type=email],
+.main-header input[type=password],
+.main-header input[type=search] {
+	min-width: 240px;
+	margin-bottom: 20px;
 
 	padding: 13px 10px 15px 10px;
 	font-weight: bold;
@@ -226,19 +243,34 @@ a {
 	border: 1px solid rgb(211, 211, 210);
 }
 
-.main-header input::placeholder {
+.main-header input[type=search] {
+	min-width: 340px;
+	margin-bottom: 0;
+}
+
+.main-header input[type=text]::placeholder,
+.main-header input[type=email]::placeholder,
+.main-header input[type=password]::placeholder,
+.main-header input[type=search]::placeholder {
 	font-weight: normal;
 	color: #999999;
 }
 
-.main-header input:hover {
+.main-header input[type=text]:hover,
+.main-header input[type=email]:hover,
+.main-header input[type=password]:hover,
+.main-header input[type=search]:hover {
 	box-shadow: 0 0 0 2px rgb(211, 211, 210);
 }
 
-.main-header input:focus {
+.main-header input[type=text]:focus,
+.main-header input[type=email]:focus,
+.main-header input[type=password]:focus,
+.main-header input[type=search]:focus {
 	box-shadow: 0 0 0 2px #8fbdec;	
 }
 
+/*------Навигация------*/
 .main-navigation {
 	display: flex;
 	min-width: 560px;
@@ -247,8 +279,6 @@ a {
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-
-/*Навигация по сайту------------------------------------*/
 
 .main-logo {
 	display: flex;
@@ -384,8 +414,6 @@ a {
 	margin-right: 0;
 }
 
-
-
 .user-navigation .search-loupe {
 	padding: 10px;
 }
@@ -447,23 +475,18 @@ a {
 	fill: black;
 }
 
-.form-enter input {
+/*.form-enter input {
 	min-width: 220px;
 	margin-bottom: 20px;
-}
+}*/
 
 .form-enter input[type=submit] {
 	margin: 0;
-	padding: 13px 15px 11px 15px;
+	padding: 13px 15px 12px 15px;
 	min-width: 100px;
-	font-size: 18px;
-	line-height: 20px;
-	color: white;
 	border-radius: 30px/40px;
 	border: 0;
-	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-	box-shadow: 0px 1px 2px 0px #ac1000;
-} 
+}
 
 .user-navigation-login-links {
 	display: flex;
@@ -702,20 +725,6 @@ a {
 .breadcrumbs-list li:nth-child(2n) {
 	font-size: 18px;
 	line-height: 18px;
-}
-
-.button {
-	font-size: 32px;
-	line-height: 44px;
-
-	text-align: center;
-	vertical-align: middle;
-
-	background-image: -webkit-linear-gradient(left, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-	background-image: -o-linear-gradient(left, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-	background-image: linear-gradient(to right, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-	border: none;
 }
 
 .offers {
