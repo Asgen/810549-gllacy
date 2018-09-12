@@ -43,11 +43,11 @@ a {
 }
 
 .site-wrapper::before {
- 	background-image: url("img/slider-2.png");
+	background-image: url("img/slider-2.png");
 }
 
 .site-wrapper::after {
- 	background-image: url("img/slider-3.png");
+	background-image: url("img/slider-3.png");
 }
 
 .content-container {
