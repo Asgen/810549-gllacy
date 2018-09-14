@@ -99,11 +99,16 @@ footer a:active {
 	box-sizing: border-box;
 }
 
+.main-header {
+	display: flex;
+	align-items: end;
+}
+
 /*------Слайдер------*/
 .slider {
 	position: relative;
 	margin-bottom: 40px;
-	padding-top: 321px;
+	padding-top: 272px;
 	text-align: center;
 	color: #ffffff;
 }
@@ -122,7 +127,7 @@ footer a:active {
 .slide-title {
 	max-width: 700px;
 	margin: 0 auto;
-	margin-bottom: 27px;
+	margin-bottom: 30px;
 
 	font-size: 60px;
 	line-height: 61px;
@@ -131,7 +136,7 @@ footer a:active {
 
 .slide-button {
 	display: inline-block;
-	padding: 12px 44px;
+	padding: 10px 44px;
 
 	font-weight: 600;
 	font-size: 32px;
@@ -154,7 +159,7 @@ footer a:active {
 
 .slider-controls {
 	position: absolute;
-	bottom: 63px;
+	bottom: 20px;
 	left: 0;
 	z-index: 20;
 	 
@@ -290,9 +295,10 @@ footer a:active {
 /*------Навигация------*/
 .main-navigation {
 	display: flex;
+	width: 100%;
 	min-width: 560px;
 	align-items: center;
-	padding-top: 10px;
+	padding-top: 23px;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
@@ -300,10 +306,13 @@ footer a:active {
 .main-logo {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
 	margin: 0;
 	margin-right: 10px;
+	margin-top: 10px;
 	padding: 0;
+
+	align-content: baseline;
+	flex-shrink: 0;
 }
 
 .main-navigation .site-navigation{
@@ -416,10 +425,11 @@ footer a:active {
 
 	margin: 0;
 	padding: 0;
+	margin-bottom: 5px;
 
 	flex-wrap: wrap;
 	justify-content: flex-end;
-	align-items: flex-end;
+	align-items: stretch;
 
 	font-size: 14px;
 	line-height: 16px;
@@ -427,33 +437,27 @@ footer a:active {
 }
 
 .user-navigation div {
-	position: relative;
 	padding-bottom: 3px;
+	display: flex;
 }
 
 .user-navigation a {
 	display: flex;
 
-	margin-right: 10px;
-	margin-bottom: 5px;
-	padding: 8px 17px;
+	padding: 7px 15px;
 	
-	justify-content: center;
 	align-items: center;
 
 	font-weight: 500;
 	text-decoration: none;
-	
-	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 20px;
-}
 
-.user-navigation .cart-icon {
-	margin-right: 0;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.2);
+
 }
 
 .user-navigation .search-loupe {
-	padding: 10px;
+	padding: 7px 8px;
 }
 
 .user-navigation-search .search-loupe:hover {
@@ -495,8 +499,12 @@ footer a:active {
 	fill: white;
 }
 
+.user-navigation-login {
+	margin: 0 10px;
+}
+
 .user-navigation-login svg {
-	margin-right: 10px;
+	margin-right: 8px;
 }
 
 .user-navigation-login:hover .form-enter {
@@ -553,7 +561,6 @@ footer a:active {
 
 .user-navigation-cart .cart {
 	position: relative;
-	margin-right: 0;
 	padding-left: 45px;
 }
 
@@ -696,10 +703,6 @@ footer a:active {
 	text-align: right;
 }
 
-/*.user-navigation-cart-table .button-cart-submit {
-	margin-right: 0;
-}*/
-
 .main-navigation .main-navigation-info {
 	display: flex;
 	align-items: flex-end;
@@ -728,6 +731,9 @@ footer a:active {
 .user-navigation-info {
 	display: flex;
 	flex-direction: column;
+
+	margin-top: 10px;
+
 	align-items: flex-end;
 	justify-content: flex-start;
 	width: 100%;
@@ -738,6 +744,7 @@ footer a:active {
 	line-height: 16px;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 5px;
 }
 
 .user-navigation-info b{
