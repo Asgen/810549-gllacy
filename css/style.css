@@ -30,7 +30,7 @@ footer a:active {
 	font-size: 18px;
 	line-height: 24px;
 
-	padding: 10px 20px;
+	padding: 11px 22px;
 	border-radius: 30px;
 
 	color: white;
@@ -111,7 +111,7 @@ footer a:active {
 
 	position: relative;
 	margin: 0 auto;
-	padding: 0 26px;
+	padding: 0 2%;
 
 	-webkit-box-sizing: border-box;
 
@@ -123,7 +123,6 @@ footer a:active {
 	display: -ms-flexbox;
 	display: flex;
 	margin-bottom:0;
-	padding-top: 5px;
 	-webkit-box-align: end;
 		-ms-flex-align: end;
 			align-items: end;
@@ -161,7 +160,7 @@ footer a:active {
 
 .slide-button {
 	display: inline-block;
-	padding: 10px 44px;
+	padding: 10px 40px;
 
 	font-weight: 600;
 	font-size: 32px;
@@ -184,22 +183,15 @@ footer a:active {
 	cursor: pointer;
 }
 
-.slider-controls {
+.product-label {
 	position: absolute;
-	bottom: 20px;
-	left: 0;
-	z-index: 20;
-	 
-	font-size: 0;
-}
-
-.slider-controls label {
-	display: inline-block;
 	width: 17px;
 	height: 17px;
-	margin-right: 8px;
 
 	vertical-align: top;
+	font-size: 0;
+
+	bottom: 22px;
 
 	background-color: transparent;
 	border: 2px solid #ffffff;
@@ -207,24 +199,37 @@ footer a:active {
 	cursor: pointer;
 }
 
-.slider-controls label:hover {
+.product-1-label {
+	left: 0;
+}
+
+.product-2-label {
+	left: 29px;
+}
+
+.product-3-label {
+	left: 58px;
+}
+
+
+.product-label:hover {
 	background-color: #b2c1b7;
 }
 
-.slider-controls label:active {
+.product-label:active {
 	background-color: #ffffff;
 }
 
 
-#product-1:checked ~ .site-wrapper .slide-1,
-#product-2:checked ~ .site-wrapper .slide-2,
-#product-3:checked ~ .site-wrapper .slide-3 {
+#product-1:checked ~ .slide-1,
+#product-2:checked ~ .slide-2,
+#product-3:checked ~ .slide-3 {
 	display: block;
 }
 
-#product-1:checked ~ .site-wrapper label[for="product-1"],
-#product-2:checked ~ .site-wrapper label[for="product-2"],
-#product-3:checked ~ .site-wrapper label[for="product-3"] {
+#product-1:checked ~ label[for="product-1"],
+#product-2:checked ~ label[for="product-2"],
+#product-3:checked ~ label[for="product-3"] {
 	background-color: #ffffff;
 }
 
@@ -375,7 +380,7 @@ footer a:active {
 		flex-wrap: wrap;
 	margin: 0;
 	margin-right: 10px;
-	margin-top: 10px;
+	margin-top: 9px;
 	padding: 0;
 
 	-ms-flex-line-pack: baseline;
@@ -400,20 +405,18 @@ footer a:active {
 	margin: 0;
 	margin-right: auto;
 	padding: 0;
+	padding-top: 5px;
 	list-style: none;
 }
 
 .site-navigation > li {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	margin-right: 5px;
+	margin-right: 3px;
 }
 
 .site-navigation a {
 	margin: 0;
 	padding: 7px 13px;
-	border-radius: 20px;
+	border-radius: 15px;
 }
 
 .site-navigation-catalog {
@@ -430,7 +433,7 @@ footer a:active {
 	margin: 0;
 	background-color: rgb(247, 246, 243);
 	color: #333333;
-	border-radius: 20px;
+	border-radius: 15px;
 	text-decoration: none;
 }
 
@@ -553,7 +556,7 @@ footer a:active {
 }
 
 .user-navigation .search-loupe {
-	padding: 7px 9px;
+	padding: 0 8px;
 }
 
 .user-navigation-search .search-loupe:hover {
@@ -852,7 +855,7 @@ footer a:active {
 .inner-page .breadcrumbs {
 	display: block;
 	position: absolute;
-	top: 102px;
+	top: 96px;
 }
 
 .breadcrumbs a:hover,
@@ -909,7 +912,7 @@ footer a:active {
 .breadcrumbs-list li {
 	display: inline-block;
 	margin: 0;
-	margin-right: 5px;
+	margin-right: 4px;
 
 	font-size: 14px;
 	line-height: 16px;
@@ -961,7 +964,7 @@ footer a:active {
 	
 	font-size: 18px;
 	
-	border-radius: 20px;
+	border-radius: 15px;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -1071,15 +1074,15 @@ footer a:active {
 .showcase-item-wrapper img {
 	border-radius: 150px;
 	width: 100%;
-	margin-bottom: 10px;
+	margin-bottom: 6px;
 }
 
 .showcase-item-wrapper .hit-price {
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	bottom: 90px;
-	left: 0;
+	top: -69px;
+	left: -2px;
 
 	font-size: 45px;
 	line-height: 45px;
@@ -1101,6 +1104,19 @@ footer a:active {
 .showcase-item-wrapper .kilo {
 	font-size: 30px;
 	line-height: 45px;
+	padding-left: 3px;
+}
+
+.showcase-item-wrapper .kilo::before {
+	content: "";
+	width: 31px;
+	height: 36px;
+	position: absolute;
+	right: 41px;
+	top: 6px;
+
+	background-image: url("../img/svg/ruble.svg");
+	background-repeat: no-repeat;
 }
 
 /*------Быстрый просмотр------*/
@@ -1147,7 +1163,7 @@ footer a:active {
 	color: black;
 	background-color: #eadcbc;
 	background-image: url("../img/waffle-pattern.jpg");
-	border-radius: 20px;
+	border-radius: 15px;
 }
 
 .about .about-heading {
@@ -1394,11 +1410,7 @@ footer a:active {
 	display: flex;
 	width: 300px;
 
-	right: 0;
-	top: 0;
-	bottom: 0;
-
-	padding: 30px 25px 30px 25px;
+	padding: 27px 25px 30px 25px;
 
 	-webkit-box-orient: vertical;
 
@@ -1428,10 +1440,10 @@ footer a:active {
 .map-info h3, .map-info p {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 4px;
+	margin-bottom: 3px;
 
 	font-size: 14px;
-	line-height: 22px;
+	line-height: 20px;
 	font-weight: normal;
 }
 
@@ -1439,8 +1451,12 @@ footer a:active {
 	font-size: 18px;
 }
 
-.visually-hidden {
-	display: none;
+.map-info .adress {
+	margin-bottom: 19px;
+}
+
+.map-info .tel-number {
+	margin-bottom: 5px;
 }
 
 /*--------Inner Page----------------------*/
@@ -1474,13 +1490,13 @@ footer a:active {
 	display: flex;
 	
 	margin-bottom: 15px;
-	-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-			justify-content: space-between;
 }
 
 .filters-form .filters-form-row:last-child {
 	margin-bottom: 0;
+	-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+			justify-content: space-between;
 }
 
 .filters-form-row .filter {
@@ -1503,8 +1519,8 @@ footer a:active {
 	display: -ms-flexbox;
 	display: flex;
 	height: 20px;
+
 	padding: 8px 16px;
-	padding-bottom: 9px;
 
 	line-height: 18px;
 	font-weight: 500;
@@ -1520,6 +1536,10 @@ footer a:active {
 	-webkit-box-align: center;
 		-ms-flex-align: center;
 			align-items: center;
+	margin-right: 15px;
+}
+
+.addons .filter-item {
 	margin-right: 20px;
 }
 
@@ -1528,6 +1548,9 @@ footer a:active {
 }
 
 .filter .filter-input-select {
+	margin: 0 -4px;
+	padding-right: 4px;
+
 	background-color: inherit;
 	color: white;
 	line-height: 22px;
@@ -1559,8 +1582,7 @@ footer a:active {
 }
 
 .filters-form-row .filters-submit-button {
-	padding: 10px 30px;
-	padding-bottom: 9px;
+	padding: 0 27px;
 
 	margin-top: 20px;
 
@@ -1647,7 +1669,7 @@ footer a:active {
 	display: flex;
 	width: 180px;
 
-	margin: 0 10px;
+	margin: 0 15px;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 		-ms-flex-direction: column;
@@ -1703,11 +1725,15 @@ footer a:active {
 	left: 70%;
 }
 
+.richness .filter-items {
+	width: 383px;
+}
+
 /*---------Чекбокс фильтра-------------*/
 	
 .filter-items label {
 	position: relative;
-	padding-left: 30px;
+	padding-left: 33px;
 	white-space: nowrap;
 }
 
@@ -1793,7 +1819,7 @@ input[type="checkbox"] + .checkbox-indicator {
 	font-weight: 400;
 	text-decoration: none;
 
-	border-radius: 20px;
+	border-radius: 15px;
 }
 
 .paginator a:hover {
@@ -1813,6 +1839,7 @@ input[type="checkbox"] + .checkbox-indicator {
 
 .paginator .next {
 	margin-left: 10px;
+	padding-right: 0;
 }
 
 .paginator .prev {
@@ -1832,7 +1859,7 @@ input[type="checkbox"] + .checkbox-indicator {
 	display: -ms-flexbox;
 	display: flex;
 	
-	padding-top: 20px;
+	padding-top: 30px;
 	padding-bottom: 30px;
 	-webkit-box-pack: justify;
 		-ms-flex-pack: justify;
@@ -1843,7 +1870,7 @@ input[type="checkbox"] + .checkbox-indicator {
 }
 
 .inner-page .main-footer {
-	padding-top: 10px;
+	padding-top: 25px;
 }
 
 .main-footer .social-list {
@@ -1939,6 +1966,7 @@ input[type="checkbox"] + .checkbox-indicator {
 	-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 			flex-direction: column;
+	position: relative;
 }
 
 .copyright p {
@@ -1953,15 +1981,34 @@ input[type="checkbox"] + .checkbox-indicator {
 .copyright-text::before {
 	content: "";
 	display: block;
+	position: absolute;
 	width: 108px;
 	height: 39px;
+	top: -40px;
 
 	background-image: url("../img/svg/logo-htmlacademy.svg");
 	background-repeat: no-repeat;
 }
 /*------Модалки------*/
+@-webkit-keyframes bounce {
+  0% {
+	opacity: 0;
+  }
+  100% {
+	opacity: 1;
+  }
+}
+@keyframes bounce {
+  0% {
+	opacity: 0;
+  }
+  100% {
+	opacity: 1;
+  }
+}
+
 .modal-wrapper {
-	position: absolute;
+	position: fixed;
 	display: none;
 	width: 100vw;
 	height: 100%;
@@ -2100,11 +2147,23 @@ input[type="checkbox"] + .checkbox-indicator {
 			box-sizing: border-box;
 }
 
+.modal-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: bounce 0.6s;
+		  animation: bounce 0.6s;
+}
+
 /*------Глобальные стили------*/
 .default-list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+.visually-hidden {
+	display: none;
 }
 
 .content-container .disabled {
