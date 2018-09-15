@@ -85,15 +85,6 @@
 						</div>
 					</div>
 					<div class="main-navigation-info">
-						<div class="breadcrumbs">
-							<ul class="breadcrumbs-list default-list">
-								<li><a href="index.html">Главная</a></li>
-								<li>&raquo;</li>
-								<li><a href="catalog.html">Каталог</a></li>
-								<li>&raquo;</li>
-								<li><a class="disabled">Сливочное</a></li>
-							</ul> 
-						</div>
 						<div class="user-navigation-info">
 							<p>С 10 до 20, ежедневно</p>
 							<b>8 812 450-25-25</b>
@@ -103,8 +94,17 @@
 			</header>
 
 			<main class="conteiner">
+				<div class="breadcrumbs">
+					<ul class="breadcrumbs-list default-list">
+						<li><a href="index.html">Главная</a></li>
+						<li>&raquo;</li>
+						<li><a href="catalog.html">Каталог</a></li>
+						<li>&raquo;</li>
+						<li><a class="disabled">Сливочное</a></li>
+					</ul> 
+				</div>
 				<h1>Сливочное мороженое</h1>
-
+				
 				<section class="filters">
 					<h2 class="visually-hidden">Настройки фильтрации</h2>
 					<form action="https://echo.htmlacademy.ru" method="get" class="filters-form" name="filters" id="form-filters">
@@ -172,13 +172,13 @@
 								<ul class="filter-items default-list">
 									<li class="filter-item">
 										<label for="chocolate-checkbox-id">шоколадные
-											<input class="visually-hidden" type="checkbox" name="chocolate" value="chocolate-checkbox" id="chocolate-checkbox-id">
+											<input class="visually-hidden" type="checkbox" name="chocolate" value="chocolate-checkbox" id="chocolate-checkbox-id" checked>
 											<span class="checkbox-indicator"></span>
 										</label>
 									</li>
 									<li class="filter-item">
 										<label for="sugar-checkbox-id">сахарные присыпки
-											<input class="visually-hidden" type="checkbox" name="sugar" value="sugar-checkbox" id="sugar-checkbox-id">
+											<input class="visually-hidden" type="checkbox" name="sugar" value="sugar-checkbox" id="sugar-checkbox-id" checked>
 											<span class="checkbox-indicator"></span>
 										</label>
 									</li>  
@@ -356,6 +356,7 @@
 							<svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#fff" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg>
 						</a>
 					</div>
+					<hr>
 				</section>
 			</main>
 
@@ -399,7 +400,7 @@
 				</div>  
 				<div class="copyright">
 					<p  class="copyright-text">Сделано в 
-						<a href="https://htmlacademy.ru/">HTML Academy</a> (c)2017
+						<a href="https://htmlacademy.ru/">HTML Academy</a> &#169; 2017
 					</p>
 				</div>
 			</footer>

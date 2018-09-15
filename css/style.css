@@ -29,7 +29,7 @@ footer a:active {
 	font-size: 18px;
 	line-height: 24px;
 
-	padding: 10px 18px;
+	padding: 10px 20px;
 	border-radius: 30px;
 
 	color: white;
@@ -71,6 +71,7 @@ footer a:active {
 
 .inner-page {
 	background-color: #849d8f;
+	background: linear-gradient(#9cb0a5 0%, #849d8f 40%);
 }
 
 .site-wrapper::before,
@@ -94,13 +95,15 @@ footer a:active {
 
 	position: relative;
 	margin: 0 auto;
-	padding: 0 2%;
+	padding: 0 26px;
 
 	box-sizing: border-box;
 }
 
 .main-header {
 	display: flex;
+	margin-bottom:0;
+	padding-top: 5px;
 	align-items: end;
 }
 
@@ -297,7 +300,7 @@ footer a:active {
 	display: flex;
 	width: 100%;
 	min-width: 560px;
-	align-items: center;
+	align-items: flex-start;
 	padding-top: 23px;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -328,7 +331,7 @@ footer a:active {
 
 .site-navigation > li {
 	display: flex;
-	/*margin-right: 5px;*/
+	margin-right: 5px;
 	/*align-items: center;*/
 }
 
@@ -421,7 +424,7 @@ footer a:active {
 .user-navigation {
 	position: relative;
 	display: flex;
-	width: 300px;
+	width: 250px;
 
 	margin: 0;
 	padding: 0;
@@ -437,7 +440,7 @@ footer a:active {
 }
 
 .user-navigation div {
-	padding-bottom: 3px;
+	padding-bottom: 8px;
 	display: flex;
 }
 
@@ -457,7 +460,7 @@ footer a:active {
 }
 
 .user-navigation .search-loupe {
-	padding: 7px 8px;
+	padding: 7px 9px;
 }
 
 .user-navigation-search .search-loupe:hover {
@@ -716,6 +719,8 @@ footer a:active {
 
 .inner-page .breadcrumbs {
 	display: block;
+	position: absolute;
+	top: 102px;
 }
 
 .breadcrumbs a:hover,
@@ -732,7 +737,7 @@ footer a:active {
 	display: flex;
 	flex-direction: column;
 
-	margin-top: 10px;
+	margin-top: 5px;
 
 	align-items: flex-end;
 	justify-content: flex-start;
@@ -756,7 +761,8 @@ footer a:active {
 
 .breadcrumbs-list li {
 	display: inline-block;
-	margin: 0 5px;
+	margin: 0;
+	margin-right: 5px;
 
 	font-size: 14px;
 	line-height: 16px;
@@ -775,6 +781,7 @@ footer a:active {
 
 .index-column {
 	width: 100%;
+	min-height: 230px;
 	display: flex;
 	flex-wrap: nowrap;
 
@@ -810,7 +817,9 @@ footer a:active {
 }
 
 .offers p {
+	margin: 0;
 	padding: 0;
+	margin-bottom: 20px;
 	font-size: 18px;
 	line-height: 22px;
 
@@ -819,7 +828,7 @@ footer a:active {
 
 .offers .offer-button {
 	align-self: flex-end;
-	margin-bottom: 20px;
+	margin-bottom: 24px;
 	
 }
 
@@ -837,6 +846,10 @@ footer a:active {
 	background-color: #5a4237;
 }
 /*------Карточки товара------*/
+.showcase hr {
+	opacity: 0.4;
+}
+
 .showcase .showcase-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -845,6 +858,10 @@ footer a:active {
 
 	justify-content: space-between;
 	align-items: stretch;
+}
+
+.inner-page .showcase-list {
+	margin-bottom: 40px;
 }
 
 .showcase-list li {
@@ -858,12 +875,9 @@ footer a:active {
 	max-width: 25%;
 }
 
-.showcase-list li:last-child {
-	margin-right: auto;
-}
-
 .showcase .showcase-item-wrapper {
 	position: relative;
+	max-width: 267px;
 
 	text-align: center;
 	font-weight: 500;
@@ -872,14 +886,16 @@ footer a:active {
 .showcase-item-wrapper > a {
 	display: block;
 	position: relative;
-	width: 94%;
+
+	padding: 0 5px;
+
 	z-index: 20;
 }
 
 .showcase-item-wrapper img {
 	border-radius: 150px;
 	width: 100%;
-	margin-bottom: 14px;
+	margin-bottom: 10px;
 }
 
 .showcase-item-wrapper .hit-price {
@@ -912,10 +928,6 @@ footer a:active {
 }
 
 /*------Быстрый просмотр------*/
-.showcase article {
-	position: relative;
-}
-
 .quick-view {
 	display: none;
 	position: absolute;
@@ -956,7 +968,7 @@ footer a:active {
 
 .about .about-heading {
 	margin: 0;
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 	padding: 0;
 
 	font-size: 24px;
@@ -979,13 +991,17 @@ footer a:active {
 	box-sizing: border-box;
 
 	margin: 0;
-	margin-bottom: 25px;
+	margin-bottom: 23px;
 	padding: 0;
-	padding-right: 15px;
 	padding-left: 55px;
 
 	font-weight: normal;
 
+}
+
+.about-list li:nth-child(2n) {
+	padding-right: 0;
+	padding-left: 70px
 }
 
 .about-list li::before {
@@ -994,7 +1010,7 @@ footer a:active {
 	width: 50px;
 	height: 50px;
 
-	top: -20px;
+	top: -15px;
 	left: 0;
 
 	background-repeat: no-repeat;
@@ -1006,6 +1022,7 @@ footer a:active {
 
 .about-list .about-item-2::before {
 	background-image: url("../img/svg/cow.svg");
+	left: 10px;
 }
 
 .about-list .about-item-3::before {
@@ -1013,6 +1030,7 @@ footer a:active {
 }
 
 .about-list .about-item-4::before {
+	left: 10px;
 	background-image: url("../img/svg/thermometer.svg");
 }
 
@@ -1023,21 +1041,34 @@ footer a:active {
 	color: #5a5a5a;
 }
 
+.news .index-column {
+	min-height: 220px;
+}
+
 .news input[type="email"]{
 	min-width: 230px;
 	flex-grow: 1;
 	margin-right: 11px;
+	margin-bottom: 0;
 }
 
 .news .preview {
 	min-width: 420px;
 	flex-grow: 1;
 
+	padding: 23px 20px;
+
 	color: #5a5a5a;
 	background-image: url("../img/strawberry-background.png");
 	background-position: left center;
 	background-size: 150%;
 	background-color: white;
+}
+
+.news .preview-heading {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 5px;
 }
 
 .preview .preview-wrapper {
@@ -1054,11 +1085,13 @@ footer a:active {
 	display: inline;
 
 	font-size: 24px;
-	line-height: 34px;
+	line-height: 30px;
 
 	color: #353535;
 	text-decoration: underline;
 	background-color: rgba(255, 255, 255, 0.6);
+
+	text-underline-position: auto;
 }
 
 .preview a:hover,
@@ -1080,13 +1113,16 @@ footer a:active {
 }
 
 .subscription form {
-	padding: 0 5px;
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .subscription .subscription-text {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 37px;
+	margin-bottom: 15px;
 	padding-top: 12px;
 
 	font-weight: normal;
@@ -1094,12 +1130,11 @@ footer a:active {
 
 .subscription .subscription-block {
 	display: flex;
+
+	margin-bottom: 30px;
+
 	justify-content: space-between;
 	align-items: flex-start;
-}
-
-.subscription .button {
-	margin-bottom: 40px;
 }
 
 .map {
@@ -1143,7 +1178,7 @@ footer a:active {
 	top: 0;
 	bottom: 0;
 
-	padding: 30px 25px;
+	padding: 30px 25px 30px 25px;
 
 	flex-direction: column;
 	justify-content: flex-start;
@@ -1164,7 +1199,7 @@ footer a:active {
 .map-info h3, .map-info p {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 5px;
+	margin-bottom: 4px;
 
 	font-size: 14px;
 	line-height: 22px;
@@ -1180,6 +1215,15 @@ footer a:active {
 }
 
 /*--------Inner Page----------------------*/
+.inner-page h1 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 27px;
+
+	font-size: 35px;
+	line-height: 41px;
+}
+
 .filters {
 	width: 860px;
 	margin-bottom: 40px;
@@ -1276,7 +1320,7 @@ footer a:active {
 	padding: 10px 30px;
 	padding-bottom: 9px;
 
-	margin-top: 15px;
+	margin-top: 20px;
 
 	font-weight: 500;
 	color: white;
@@ -1406,7 +1450,7 @@ footer a:active {
 	white-space: nowrap;
 }
 
-.filter-item input[type="checkbox"] + .checkbox-indicator {
+input[type="checkbox"] + .checkbox-indicator {
  	position: absolute;
 	top: 0;
 	left: 0;
@@ -1467,6 +1511,7 @@ footer a:active {
 	display: flex;
 	width: 100%;
 	height: 30px;
+	margin-bottom: 25px;
 	
 	justify-content: flex-end;
 	align-items: center;
@@ -1474,8 +1519,7 @@ footer a:active {
 }
 
 .paginator a {
-	padding: 4px 10px;
-	padding-bottom: 3px;
+	padding: 2px 9px;
 
 	font-weight: 400;
 	text-decoration: none;
@@ -1521,6 +1565,10 @@ footer a:active {
 	align-items: flex-end;
 }
 
+.inner-page .main-footer {
+	padding-top: 10px;
+}
+
 .main-footer .social-list {
 	display: flex;
 	max-width: 267px;
@@ -1554,7 +1602,7 @@ footer a:active {
 	width: 32px;
 	height: 32px;
 
-	margin-right: 13px;
+	margin-right: 12px;
 	align-items: center;
 	justify-content: center;
 
@@ -1572,6 +1620,24 @@ footer a:active {
 
 .social-button:active path {
 	opacity: 0.8;
+}
+
+.main-footer .footer-links-provider {
+	font-weight: bold;
+	position: relative;
+}
+
+.main-footer .footer-links-provider::before {
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+
+	left: -20px;
+	top: 5px;
+
+	background-image: url("../img/svg/heart.svg");
+	background-repeat: no-repeat;
 }
 
 .main-footer .copyright {
@@ -1597,12 +1663,105 @@ footer a:active {
 	background-image: url("../img/svg/logo-htmlacademy.svg");
 	background-repeat: no-repeat;
 }
-
-
-.popup-wrapper {
+/*------Модалки------*/
+.modal-wrapper {
+	position: absolute;
 	display: none;
+	width: 100vw;
+	height: 100%;
+	top: 0;
+
+	justify-content: center;
+	align-items: center;
+
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
+.modal-wrapper .modal-close {
+	position: absolute;
+	width: 18px;
+	height: 18px;
+
+	right: 0;
+	
+	font-size: 0;
+
+	background-color: inherit;
+	border: 0;
+	background-repeat: no-repeat;
+	background-image: url("../img/svg/cross-big.svg");
+
+	cursor: pointer;
+}
+
+.modal-wrapper form {
+	display: flex;
+	position: relative;
+	width: 477px;
+	flex-direction: column;
+	box-sizing: border-box;
+
+	justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+	background-color: #f8f7f4;
+	border: 25px solid #f8f7f4;
+	border-radius: 11px;
+}
+
+.modal-wrapper h4 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+
+	font-size: 24px;
+	line-height: 28px;
+	color: #323232;
+}
+
+.modal-wrapper input[type="submit"] {
+	margin-left: auto;
+}
+
+.modal-form input[type=text],
+.modal-form input[type=email],
+.modal-form textarea {
+	min-width: 240px;
+	margin-bottom: 20px;
+
+	padding: 13px 10px 15px 10px;
+	font-weight: bold;
+
+	border-radius: 5px;
+	border: 1px solid rgb(211, 211, 210);
+}
+
+.modal-form input[type=text]::placeholder,
+.modal-form input[type=email]::placeholder,
+.modal-form textarea::placeholder {
+	font-weight: normal;
+	color: #999999;
+}
+
+.modal-form input[type=text]:hover,
+.modal-form input[type=email]:hover,
+.modal-form textarea:hover {
+	box-shadow: 0 0 0 2px rgb(211, 211, 210);
+}
+
+.modal-form input[type=text]:focus,
+.modal-form input[type=email]:focus,
+.modal-form textarea:focus {
+	box-shadow: 0 0 0 2px #8fbdec;	
+}
+
+.modal-form textarea {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/*------Глобальные стили------*/
 .default-list {
 	list-style: none;
 	margin: 0;
