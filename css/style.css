@@ -408,7 +408,6 @@ footer a:active {
 	display: -ms-flexbox;
 	display: flex;
 	margin-right: 5px;
-	/*align-items: center;*/
 }
 
 .site-navigation a {
@@ -1901,7 +1900,7 @@ input[type="checkbox"] + .checkbox-indicator {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 
-	border: 3px solid #a9bab0;
+	border: 3px solid rgba(255, 255, 255, 0.4);
 	border-radius: 50%;
 }
 
