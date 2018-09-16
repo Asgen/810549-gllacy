@@ -421,7 +421,7 @@ footer a:active {
 
 .site-navigation-catalog {
 	position: relative;
-	padding-bottom: 7px;
+	padding-bottom: 15px;
 }
 
 .inner-page .active-navigation-link {
@@ -444,7 +444,7 @@ footer a:active {
 	z-index: 10;
 
 	position: absolute;
-	top: 40px;
+	top: 33px;
 	margin: 0;
 	padding: 0;
 	
@@ -938,6 +938,12 @@ footer a:active {
 	-ms-flex-wrap: nowrap;
 		flex-wrap: nowrap;
 
+	-webkit-box-pack: justify;
+
+		-ms-flex-pack: justify;
+
+			justify-content: space-between;
+
 	margin: 0;
 	padding: 0;
 	-ms-flex-line-pack: stretch;
@@ -1251,6 +1257,7 @@ footer a:active {
 
 .news input[type="email"]{
 	min-width: 230px;
+	height: 15px;
 	-webkit-box-flex: 1;
 		-ms-flex-positive: 1;
 			flex-grow: 1;
@@ -1342,7 +1349,7 @@ footer a:active {
 	margin: 0;
 	padding: 0;
 	margin-bottom: 15px;
-	padding-top: 12px;
+	padding-top: 8px;
 
 	font-weight: normal;
 }
@@ -1352,7 +1359,7 @@ footer a:active {
 	display: -ms-flexbox;
 	display: flex;
 
-	margin-bottom: 30px;
+	margin-bottom: 35px;
 
 	-webkit-box-pack: justify;
 
@@ -1362,6 +1369,11 @@ footer a:active {
 	-webkit-box-align: start;
 		-ms-flex-align: start;
 			align-items: flex-start;
+}
+
+.subscription-block .button {
+	line-height: 20px;
+	padding: 11px 20px;
 }
 
 .map {
@@ -1642,7 +1654,7 @@ footer a:active {
 	cursor: pointer;
 }
 
-.price-controls input[type="text"]  {
+.price-controls input[type="text"] {
 	width: 30px;
 	min-width: 0;
 
@@ -1991,20 +2003,20 @@ input[type="checkbox"] + .checkbox-indicator {
 }
 /*------Модалки------*/
 @-webkit-keyframes bounce {
-  0% {
+	0% {
 	opacity: 0;
-  }
-  100% {
+	}
+	100% {
 	opacity: 1;
-  }
+	}
 }
 @keyframes bounce {
-  0% {
+	0% {
 	opacity: 0;
-  }
-  100% {
+	}
+	100% {
 	opacity: 1;
-  }
+	}
 }
 
 .modal-wrapper {
@@ -2148,11 +2160,11 @@ input[type="checkbox"] + .checkbox-indicator {
 }
 
 .modal-show {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-animation: bounce 0.6s;
-		  animation: bounce 0.6s;
+ 	display: -webkit-box;
+ 	display: -ms-flexbox;
+ 	display: flex;
+ 	-webkit-animation: bounce 0.6s;
+			animation: bounce 0.6s;
 }
 
 /*------Глобальные стили------*/
