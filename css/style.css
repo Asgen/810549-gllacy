@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 22px;
@@ -437,7 +437,7 @@ footer a:active {
 	text-decoration: none;
 }
 
-/* Подменю-------------------------------------*/
+/*-------Подменю------*/
 
 .site-navigation-catalog-items {
 	display: none;
@@ -1761,11 +1761,11 @@ input[type="checkbox"] + .checkbox-indicator {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size:23px 20px;
- }
+}
 
 .filter-item > label {
 	opacity: 0.8;
-} 
+}
 
 .filter-item:hover > label {
 	opacity: 1;
@@ -1794,7 +1794,7 @@ input[type="checkbox"] + .checkbox-indicator {
 	background-size:22px 22px;
 
 	opacity: 0.8;
- }
+}
 
 .filter-item input[type="radio"]:focus + .radio-indicator,
 .filter-item input[type="radio"]:hover + .radio-indicator {
@@ -2036,6 +2036,7 @@ input[type="checkbox"] + .checkbox-indicator {
 			align-items: center;
 
 	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 30;
 }
 
 .modal-wrapper .modal-close {
@@ -2157,13 +2158,14 @@ input[type="checkbox"] + .checkbox-indicator {
 	width: 100%;
 	-webkit-box-sizing: border-box;
 			box-sizing: border-box;
+	resize: none;
 }
 
 .modal-show {
- 	display: -webkit-box;
- 	display: -ms-flexbox;
- 	display: flex;
- 	-webkit-animation: bounce 0.6s;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-animation: bounce 0.6s;
 			animation: bounce 0.6s;
 }
 
