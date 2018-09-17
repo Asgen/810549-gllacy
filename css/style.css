@@ -2036,6 +2036,7 @@ input[type="checkbox"] + .checkbox-indicator {
 	height: 18px;
 
 	right: 0;
+	top: 0;
 	
 	font-size: 0;
 
