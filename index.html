@@ -8,6 +8,9 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body class="main-page">
+		<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+		<input class="visually-hidden" type="radio" id="product-2" name="toggle">
+		<input class="visually-hidden" type="radio" id="product-3" name="toggle">
 		<div class="site-wrapper">
 			<div class="content-container">
 				<h1 class="visually-hidden">Магазин Глэйси</h1>
@@ -71,36 +74,29 @@
 				</header>
 				
 				<section class="slider">
+					<div class="slider-controls">
+						<label for="product-1">Первый</label>
+						<label for="product-2">Второй</label>
+						<label for="product-3">Третий</label>
+					</div>
 					<ul class="slider-list">
-						<li>
-							<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-							<label class="product-label product-1-label" for="product-1">Первый</label>
-							<div class="slider-item slide slide-1">
-								<h3 class="slide-title">
-									Крем-брюле и пломбир с малиновым джемом
-								</h3>
-								<a class="button slide-button" href="#">Давайте оба!</a>
-							</div>
+						<li class="slider-item slide slide-1">
+							<h3 class="slide-title">
+								Крем-брюле и пломбир с малиновым джемом
+							</h3>
+							<a class="button slide-button" href="#">Давайте оба!</a>
 						</li>
-						<li>
-							<input class="visually-hidden" type="radio" id="product-2" name="toggle">
-							<label class="product-label product-2-label" for="product-2">Второй</label>
-							<div class="slider-item slide slide-2">
-								<h3 class="slide-title">
-									Шоколадный пломбир и лимонный сорбет
-								</h3>
-								<a class="button slide-button" href="#">Давайте оба!</a>
-							</div>
+						<li class="slider-item slide slide-2">
+							<h3 class="slide-title">
+								Шоколадный пломбир и лимонный сорбет
+							</h3>
+							<a class="button slide-button" href="#">Давайте оба!</a>
 						</li>
-						<li>
-							<input class="visually-hidden" type="radio" id="product-3" name="toggle">
-							<label class="product-label product-3-label" for="product-3">Первый</label>
-							<div class="slider-item slide slide-3">
-								<h3 class="slide-title">
-									Пломбир с помадкой и клубничный щербет
-								</h3>
-								<a class="button slide-button" href="#">Давайте оба!</a>
-							</div>
+						<li class="slider-item slide slide-3">
+							<h3 class="slide-title">
+								Пломбир с помадкой и клубничный щербет
+							</h3>
+							<a class="button slide-button" href="#">Давайте оба!</a>
 						</li>
 					</ul>
 				</section>
@@ -211,7 +207,7 @@
 					</section>
 
 					<section class="map">
-						<div class="big-map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1dd237212eff694f8d439023294226d5ea22f2062410eb2626b557b412e9d7c5&amp;source=constructor" width="100%" height="430" frameborder="0"></iframe></div>
+						<div class="big-map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1dd237212eff694f8d439023294226d5ea22f2062410eb2626b557b412e9d7c5&amp;source=constructor" width="100" height="430"></iframe></div>
 						<h2 class="visually-hidden">Как нас найти</h2>
 						<div class="map-info-wrapper">
 							<div class="map-info">

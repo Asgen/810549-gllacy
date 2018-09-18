@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 22px;
@@ -183,15 +183,22 @@ footer a:active {
 	cursor: pointer;
 }
 
-.product-label {
+.slider-controls {
 	position: absolute;
+	bottom: 20px;
+	left: 0;
+	z-index: 20;
+	 
+	font-size: 0;
+}
+
+.slider-controls label {
+	display: inline-block;
 	width: 17px;
 	height: 17px;
+	margin-right: 8px;
 
 	vertical-align: top;
-	font-size: 0;
-
-	bottom: 22px;
 
 	background-color: transparent;
 	border: 2px solid #ffffff;
@@ -199,37 +206,24 @@ footer a:active {
 	cursor: pointer;
 }
 
-.product-1-label {
-	left: 0;
-}
-
-.product-2-label {
-	left: 29px;
-}
-
-.product-3-label {
-	left: 58px;
-}
-
-
-.product-label:hover {
+.slider-controls label:hover {
 	background-color: #b2c1b7;
 }
 
-.product-label:active {
+.slider-controls label:active {
 	background-color: #ffffff;
 }
 
 
-#product-1:checked ~ .slide-1,
-#product-2:checked ~ .slide-2,
-#product-3:checked ~ .slide-3 {
+#product-1:checked ~ .site-wrapper .slide-1,
+#product-2:checked ~ .site-wrapper .slide-2,
+#product-3:checked ~ .site-wrapper .slide-3 {
 	display: block;
 }
 
-#product-1:checked ~ label[for="product-1"],
-#product-2:checked ~ label[for="product-2"],
-#product-3:checked ~ label[for="product-3"] {
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
 	background-color: #ffffff;
 }
 
@@ -1406,6 +1400,10 @@ footer a:active {
 
 }
 
+.big-map iframe {
+	width: 98vw;
+	border: 0;
+}
 
 .map-info-wrapper {
 	min-height: 300px;
