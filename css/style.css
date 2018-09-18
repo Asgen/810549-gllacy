@@ -1768,6 +1768,7 @@ footer a:active {
 .checkbox-input:checked + .checkbox-indicator {
 	left: 1px;
 	background-image: url("../img/svg/checkbox-on.svg");
+	opacity: 1;
 }
 
 /*----------Radio buttons----------*/
@@ -1797,6 +1798,7 @@ footer a:active {
 
 .richness-input:checked + .radio-indicator {
 	background-image: url("../img/svg/radio-on.svg");
+	opacity: 1;
 }
 
 /*------Пагинатор------*/
