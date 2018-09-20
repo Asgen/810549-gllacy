@@ -4,7 +4,6 @@ body {
 
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
-	font-weight: bold;
 	line-height: 22px;
 	color: white;
 }
@@ -28,9 +27,11 @@ footer a:active {
 
 .button {
 	font-size: 18px;
+	font-weight: bold;
 	line-height: 24px;
 
-	padding: 11px 22px;
+	padding: 10px 22px;
+	padding-bottom: 12px;
 	border-radius: 30px;
 
 	color: white;
@@ -132,7 +133,7 @@ footer a:active {
 .slider {
 	position: relative;
 	margin-bottom: 40px;
-	padding-top: 272px;
+	padding-top: 275px;
 	text-align: center;
 	color: #ffffff;
 }
@@ -155,14 +156,14 @@ footer a:active {
 
 	font-size: 60px;
 	line-height: 61px;
-	font-weight: 800;
+	font-weight: bold;
 }
 
 .slide-button {
 	display: inline-block;
 	padding: 10px 40px;
 
-	font-weight: 600;
+	font-weight: bold;
 	font-size: 32px;
 	line-height: 44px;
 	color: #ffffff;
@@ -185,7 +186,7 @@ footer a:active {
 
 .slider-controls {
 	position: absolute;
-	bottom: 20px;
+	bottom: 23px;
 	left: 0;
 	z-index: 20;
 	 
@@ -399,6 +400,9 @@ footer a:active {
 	margin: 0;
 	padding: 7px 13px;
 	border-radius: 15px;
+
+	font-weight: bold;
+	line-height: 18px;
 }
 
 .site-navigation-catalog {
@@ -415,7 +419,7 @@ footer a:active {
 	margin: 0;
 	background-color: rgb(247, 246, 243);
 	color: #333333;
-	border-radius: 15px;
+	border-radius: 20px;
 	text-decoration: none;
 }
 
@@ -848,7 +852,7 @@ footer a:active {
 .inner-page .breadcrumbs {
 	display: block;
 	position: absolute;
-	top: 96px;
+	top: 93px;
 }
 
 .breadcrumbs a:hover,
@@ -886,11 +890,13 @@ footer a:active {
 }
 
 .user-navigation-info p{
-	font-size: 14px;
-	line-height: 16px;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 5px;
+	margin-bottom: 3px;
+
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 16px;
 }
 
 .user-navigation-info b{
@@ -909,11 +915,10 @@ footer a:active {
 
 	font-size: 14px;
 	line-height: 16px;
-	font-weight: normal;
 }
 
 .breadcrumbs-list li:nth-child(2n) {
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 18px;
 }
 
@@ -958,7 +963,7 @@ footer a:active {
 	max-width: 560px;
 
 	margin: 0;
-	padding: 18px 20px 0 20px;
+	padding: 15px 20px 0 20px;
 	-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 	
@@ -981,15 +986,18 @@ footer a:active {
 .offers p {
 	margin: 0;
 	padding: 0;
+	padding-right: 5px;
 	margin-bottom: 20px;
-	font-size: 18px;
-	line-height: 22px;
 
 	-webkit-box-flex: 1;
-
 		-ms-flex-positive: 1;
+			flex-grow: 1;
+	
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 22px;
 
-			flex-grow: 1
+	
 }
 
 .offers .offer-button {
@@ -1149,6 +1157,7 @@ footer a:active {
 /*------Секция о нас------*/
 .about {
 	margin-bottom: 40px;
+	margin-top: -2px;
 	padding: 26px 20px;
 	padding-bottom: 0;
 
@@ -1302,6 +1311,13 @@ footer a:active {
 	color: #e84d37;
 }
 
+.preview .preview-link-text {
+	display: block;
+	max-width: 300px;
+
+	font-weight: bold;
+}
+
 .news .subscription {
 	min-width: 420px;
 
@@ -1335,7 +1351,7 @@ footer a:active {
 	margin: 0;
 	padding: 0;
 	margin-bottom: 15px;
-	padding-top: 8px;
+	padding-top: 13px;
 
 	font-weight: normal;
 }
@@ -1418,7 +1434,7 @@ footer a:active {
 	display: flex;
 	width: 300px;
 
-	padding: 27px 25px 30px 25px;
+	padding: 25px;
 
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
@@ -1445,7 +1461,6 @@ footer a:active {
 .map-info h3, .map-info p {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 3px;
 
 	font-size: 14px;
 	line-height: 20px;
@@ -1456,12 +1471,24 @@ footer a:active {
 	font-size: 18px;
 }
 
+.map-info p {
+	margin-bottom: 24px;
+}
+
 .map-info .adress {
 	margin-bottom: 19px;
+	line-height: 24px;
 }
 
 .map-info .tel-number {
-	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 3px;
+}
+
+.map .map-button {
+	padding: 9px 22px;
+    margin-bottom: 5px;
+    padding-bottom: 11px;
 }
 
 /*--------Inner Page----------------------*/
@@ -1524,8 +1551,9 @@ footer a:active {
 	display: -ms-flexbox;
 	display: flex;
 	height: 20px;
+	min-width: 173px;
 
-	padding: 8px 16px;
+	padding: 8px 10px;
 
 	line-height: 18px;
 	font-weight: 500;
@@ -1553,12 +1581,10 @@ footer a:active {
 }
 
 .filter .filter-input-select {
-	margin: 0 -4px;
-	padding-right: 4px;
 
 	background-color: #aabcb2;
 	color: white;
-	line-height: 22px;
+	line-height: 18px;
 	border: 0;
 }
 
@@ -1619,7 +1645,7 @@ footer a:active {
 }
 
 .filter-price-title .filter-name {
-	padding-left: 25px;
+	padding-left: 30px;
 }
 
 .price .price-controls {
@@ -1645,8 +1671,12 @@ footer a:active {
 	cursor: pointer;
 }
 
+.price-controls .min-price {
+	margin-right: 5px;
+}
+
 .price-controls input[type="text"] {
-	width: 30px;
+	width: 28px;
 	min-width: 0;
 
 	margin: 0;
@@ -1728,8 +1758,14 @@ footer a:active {
 	left: 70%;
 }
 
-.richness .filter-items {
-	width: 383px;
+.filters-form-row .richness,
+.addons .filter-item {
+	flex-grow: 1;
+}
+
+.richness .filter-items,
+.addons .filter-items {
+	padding-left: 15px;
 }
 
 /*---------Чекбокс фильтра-------------*/
@@ -1886,13 +1922,15 @@ footer a:active {
 	max-width: 267px;
 	-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
+
+	margin-bottom: 3px;
 }
 
 .footer-links-wrapper {
 	width: 325px;
 	font-size: 13px;
 	font-weight: normal;
-	padding-left: 10px;
+	padding-left: 20px;
 }
 
 .footer-links {
@@ -1922,7 +1960,7 @@ footer a:active {
 	width: 32px;
 	height: 32px;
 
-	margin-right: 12px;
+	margin-right: 11px;
 	-webkit-box-align: center;
 		-ms-flex-align: center;
 			align-items: center;
@@ -1978,6 +2016,7 @@ footer a:active {
 .copyright p {
 	margin: 0;
 	padding: 0;
+	margin-bottom: -3px;
 
 	font-size: 12px;
 	font-weight: normal;
