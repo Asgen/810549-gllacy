@@ -1344,24 +1344,10 @@ footer a:active,
 	background-color: #f8f7f4;
 }
 
-.subscription form {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	height: 100%;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-			flex-direction: column;
-	-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-			justify-content: space-between;
-}
-
 .subscription .subscription-text {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 15px;
+	margin-bottom: 34px;
 	padding-top: 13px;
 
 	font-weight: normal;
@@ -1592,7 +1578,10 @@ footer a:active,
 	line-height: 18px;
 	border: 0;
 
-	padding-right: 25px;
+	padding-right: 20px;
+	padding-left: 5px;
+	-moz-padding-end: 35px;
+	-moz-padding-start: 0px;
 	
 	-moz-appearance: none;
 		-webkit-appearance: none;
@@ -1600,6 +1589,10 @@ footer a:active,
 	background-image: url("../img/svg/icon-down-dir-white.svg");
 	background-repeat: no-repeat;
 	background-position: right;
+}
+
+.filter-input-select::-ms-expand {
+    display: none;
 }
 
 .filter .filter-input-select:hover {
@@ -1747,7 +1740,7 @@ footer a:active,
 	width: 60%;
 	height: 4px;
 
-	margin-left: 40px;
+	margin-left: 20px;
 
 	background: #ffffff;
 }
@@ -1771,11 +1764,11 @@ footer a:active,
 }
 
 .range-toggle-min {
-	left: 20%;
+	left: 15%;
 }
 
 .range-toggle-max {
-	left: 70%;
+	left: 60%;
 }
 
 .filters-form-row .richness,
@@ -2062,6 +2055,10 @@ footer a:active,
 	line-height: 18px;
 }
 
+.copyright img {
+	height: 37px;
+}
+
 
 /*------Модалки------*/
 @-webkit-keyframes bounce {
@@ -2239,9 +2236,13 @@ footer a:active,
 
 .visually-hidden {
 	position: absolute;
-	clip: rect(0 0 0 0);
+	width: 1px;
 	height: 1px;
 	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .content-container .disabled {
